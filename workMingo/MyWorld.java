@@ -17,7 +17,7 @@ public class MyWorld extends World
     private int naruto1;
     private int naruto2;
     int timer = 240;
-    int ex = 400;
+    int ex = 440;
     GreenfootSound ora =  new GreenfootSound("ora.mp3");
     GreenfootSound pixel =  new GreenfootSound("pixel.mp3");
     GreenfootSound rave = new GreenfootSound("Rave.mp3");
@@ -34,6 +34,11 @@ public class MyWorld extends World
         count = 0;
         player1 = 0;
         player2 = 0;
+        naruto = 0;
+        naruto1 =0;
+        naruto2 =0;
+        ex = 440;
+        timer = 240;
         prepare();
         setPaintOrder(Player1.class,Player2.class,Rowlet1.class,Rowlet2.class,Rowlet3.class,sasuke2.class,sasuke1.class,konoha.class);
     }
@@ -75,6 +80,9 @@ public class MyWorld extends World
 
     public void act(){
         Sound();
+        tu();
+        tu1();
+        tu2();
 
         if(player1<=-2){
             player1 = -2;
@@ -88,9 +96,6 @@ public class MyWorld extends World
             ShowText();
             Winner();
             Extra();
-            tu();
-            tu1();
-            tu2();
 
         }
     }
@@ -137,12 +142,12 @@ public class MyWorld extends World
         int k = Greenfoot.getRandomNumber(300)%2;
         ex--;
         if(ex==0){
-            ex = 400;
-            if(k == 1){
+            ex = 440;
+            if(k == 0){
 
                 addObject(new richard(),400,500);
             }
-            if(k==0){
+            if(k == 1){
 
                 addObject(new ring(),400,500);
 
@@ -154,7 +159,7 @@ public class MyWorld extends World
     public void tu(){
         naruto++;
         if(naruto == 400){
-            naruto = 0;
+            
             addObject(new konoha(),459,165);
         }
     }
@@ -162,7 +167,7 @@ public class MyWorld extends World
     public void tu1(){
         naruto1++;
         if(naruto1 == 500){
-            naruto1 = 0;
+            
             addObject(new sasuke1(),430,170);
         }
     }
@@ -170,7 +175,7 @@ public class MyWorld extends World
     public void tu2(){
         naruto2++;
         if(naruto2 == 620){
-            naruto2 = 0;
+            
             addObject(new sasuke2(),430,170);
         }
     }

@@ -12,7 +12,7 @@ public class sasuke1 extends Actor
      * Act - do whatever the sasuke1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public static int naruto1 ;
+    public int naruto1 ;
     public void act() 
     {
         delete();

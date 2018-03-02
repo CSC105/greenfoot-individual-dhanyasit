@@ -13,6 +13,7 @@ public class richard extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     GreenfootSound yoshi =  new GreenfootSound("yoshi.mp3");
+    public static int count ;
     public void act() 
     {
         if((Greenfoot.isKeyDown("s"))){
@@ -34,5 +35,12 @@ public class richard extends Actor
         GreenfootImage img = getImage();
         img.scale(80,100);
         setImage(img);
+    }
+    public void delete(){
+        count++;
+        if(this.count >=200){
+            getWorld().removeObject(this);
+        }
+
     }
 }

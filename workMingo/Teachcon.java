@@ -62,5 +62,20 @@ public class Teachcon extends World
         addObject(rings,185,522);
         rings.setLocation(73,533);
         removeObject(ring);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(413,39);
+        how.setLocation(319,16);
     }
 }
