@@ -45,9 +45,6 @@ public class Mingo extends Actor
     }
 
     public void movement(){
-        /*if(Rowlet1.class == null){
-        if(Rowlet2.class == null){
-        if(Rowlet3.class == null){*/
         if(Greenfoot.isKeyDown("w")){
 
             setLocation(250,400);
